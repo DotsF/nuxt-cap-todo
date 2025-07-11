@@ -107,6 +107,64 @@ yarn preview
 bun run preview
 ```
 
+## 📱 Capacitor（モバイルアプリ）
+
+### Capacitorの初期化
+
+```bash
+# Capacitorの初期化
+npx cap init
+
+# プラットフォームの追加
+npx cap add ios
+npx cap add android
+```
+
+### アプリケーションのビルドと同期
+
+```bash
+# アプリケーションをビルド
+npm run build
+
+# Capacitorに同期
+npx cap sync
+
+# プラットフォーム固有のファイルをコピー
+npx cap copy ios
+npx cap copy android
+```
+
+### 開発サーバーの起動
+
+```bash
+# iOSシミュレーターで起動
+npx cap run ios
+
+# Androidエミュレーターで起動
+npx cap run android
+
+# ブラウザで起動
+npx cap serve
+```
+
+### ネイティブIDEでの開発
+
+```bash
+# XcodeでiOSプロジェクトを開く
+npx cap open ios
+
+# Android StudioでAndroidプロジェクトを開く
+npx cap open android
+```
+
+### プラグインの追加
+
+```bash
+# カメラプラグインの追加例
+npm install @capacitor/camera
+npx cap sync
+```
+
 ## 🎮 使用方法
 
 1. **タスクの追加**: 入力フィールドにタスクを入力して「+」ボタンをクリック
